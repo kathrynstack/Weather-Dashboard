@@ -1,0 +1,48 @@
+h1 {
+    background-image: linear-gradient(to right, rgb(38, 166, 198) , rgb(51, 46, 123));
+    text-align: center;
+    color: white;
+    
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#weatherDay {
+    background-color: darkblue;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5px;
+    color: white;
+}
+
+#dateField {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#humidityField {
+    margin-bottom: 20px;
+}
+
+#search-button, #clear-button {
+    width: 100%;
+    color: white;charlotte
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#city-btn {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+    
+}
+
+#single-day-report {
+    border: solid black;
+    border-width: 1px;
+    padding-left: 5px;
+}
