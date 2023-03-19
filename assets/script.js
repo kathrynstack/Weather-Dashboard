@@ -19,6 +19,16 @@ function showWeather(weatherData) {
   //Clear the data first so it doesnt keep appending if button is clicked multiple times
   fiveDayReport.empty();
 
+  if (weatherData.cod != 200) {
+    let singleDayReport = $('#single-day-report');
+    singleDayReport.empty();
+    
+    let errorMsg = $('<h3>');
+    errorMsg.text(`City not Found`);
+    singleDayReport.append(errorMsg);
+    return -1;
+}
+
   let prevDay = -1;
   let currentDate = new Date();
   for (let i = 0; i < weatherData.list.length; i++) {
